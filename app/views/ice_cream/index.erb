@@ -1,0 +1,5 @@
+<h1> Here is a list of your favorite ice creams! </h1>
+
+<% @user.ice_creams.each do |ice_cream|%>
+    <a href="/ice_creams/<%ice_cream.id%>"<%= ice_cream.flavor %></a>
+    <% end %>
